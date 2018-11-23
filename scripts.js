@@ -47,6 +47,7 @@
     modalTrigger.addEventListener('click', function(e) {
       e.preventDefault();
       toggleModal();
+      // вы же знаете на какую кнопку кликнули?
     });
 
     modalClose.addEventListener('click', function (e) {
@@ -56,6 +57,8 @@
 
     function toggleModal() {
       document.querySelector('body').classList.toggle('modal-open');
+      // скрой все секции в модалке
+      // покажи конкретную секцию в модалке
       modal.classList.toggle(activeClass);
     }
 
